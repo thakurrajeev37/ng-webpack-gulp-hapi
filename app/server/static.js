@@ -5,7 +5,7 @@
 exports.get = {
     handler: {
         directory: {
-            path: 'dist',
+            path: 'dist/client',
             index: true,
             listing: true
         }

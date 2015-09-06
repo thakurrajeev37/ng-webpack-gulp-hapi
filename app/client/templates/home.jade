@@ -1,1 +1,13 @@
-h2 {{home}}
+.container
+    h2 {{home}}
+    .well
+       .row
+        .col-md-2
+            remaining-todo(lists="lists")
+        .col-md-2
+            total-todo(lists="lists")
+        .row
+            .col-md-8
+                add-todo(lists="lists")
+        .row.col-md-8
+            todo-list(lists="lists")

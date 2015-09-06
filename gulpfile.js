@@ -15,7 +15,7 @@ gulp.task('views', function() {
 gulp.task('jade', function() {
     return gulp.src('app/client/index.jade')
         .pipe(jade())
-        .pipe(gulp.dest('dist/'));
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task("webpack", function() {
