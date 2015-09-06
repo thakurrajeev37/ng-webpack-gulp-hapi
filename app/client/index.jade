@@ -1,0 +1,9 @@
+doctype html(lang='en')
+head
+    meta(charset='UTF-8')
+    title Webpack &amp; Angular
+body(ng-app='app')
+    include templates/partials/_header
+    div(ng-view='')
+    script(src='bundle.js')
+    include templates/partials/_footer

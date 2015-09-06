@@ -1,0 +1,17 @@
+{
+  "name": "web-ng",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.10.1",
+    "bootstrap": "~3.3.5",
+    "angular-bootstrap": "~0.13.4"
+  }
+}
