@@ -46,7 +46,7 @@ module.exports = {
 			{
 				test: /\.jade$/,
 				loader: "jade"
-			},
+			}
 
 	  	]
   	},
