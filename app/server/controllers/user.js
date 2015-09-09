@@ -51,18 +51,17 @@ exports.create = {
 
 exports.save = {
     handler: function (request, reply) {
-        //console.log(request);
-        //var user = new User(request.payload);
-        //user.save(function(err, user) {
-        //    if (!err) {
-        //        reply(user).created('/user/' + user._id); // HTTP 201
-        //    } else {
-        //        if (11000 === err.code || 11001 === err.code) {
-        //            reply(Boom.forbidden("please provide another user id, it already exist"));
-        //        }
-        //        else reply(Boom.forbidden(getErrorMessageFrom(err))); // HTTP 403
-        //    }
-        //});
+        var user = new User(request.payload);
+        user.save(function(err, user) {
+            if (!err) {
+                reply(user).created('/user/' + user._id); // HTTP 201
+            } else {
+                if (11000 === err.code || 11001 === err.code) {
+                    reply(Boom.forbidden("please provide another user id, it already exist"));
+                }
+                else reply(Boom.forbidden(getErrorMessageFrom(err))); // HTTP 403
+            }
+        });
     }
 };
 

@@ -1,4 +1,4 @@
-nav.navbar.navbar-default
+nav.navbar.navbar-default(data-ng-controller="NavbarController")
     .container-fluid
         // Brand and toggle get grouped for better mobile display
         .navbar-header
@@ -13,7 +13,7 @@ nav.navbar.navbar-default
             ul.nav.navbar-nav
                 li.active
                     a(href='#/')
-                        | Home
+                        | {{navCtrl}}
                         span.sr-only (current)
                 li
                     a(href='#/about') About

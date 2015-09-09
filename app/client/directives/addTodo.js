@@ -11,9 +11,9 @@ angular.module('app').directive('addTodo', function($http) {
             scope.add = function(value) {
                 var list = {done: false, title: value}
                 scope.lists.unshift(list);
-                //$http.post('/api/todo', list).success(function(data) {
-                //    console.log('data', data);
-                //});
+                $http.post('/todo', list).success(function(data) {
+                    console.log('data', data);
+                });
                 scope.todo = '';
             };
 

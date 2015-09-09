@@ -17,6 +17,8 @@ var UserSchema = new Schema({
      User Name. It can only contain string, is required field.
      */
     username : { type: String, required: true },
+    //title : { type: String},
+    //done : { type: Boolean}
 
 
 
